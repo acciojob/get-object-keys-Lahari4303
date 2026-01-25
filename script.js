@@ -6,10 +6,8 @@ let name ={
 	d : "Lahari"
 }
 function getKeys(name){
-	let keys=[]
 	for(let key in name){
-		keys.push(key)
+		return Object.keys(name)
 	}
-	return keys
 }
 console.log(getKeys(name))
