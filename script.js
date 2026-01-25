@@ -5,8 +5,6 @@ let Student ={
 	city : "Hyderabad"
 }
 function getKeys(student){
-	for(let key in student){
-		return Object.keys(student)
-	}
+	return Object.keys(student)
 }
 console.log(getKeys(Student))
