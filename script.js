@@ -1,13 +1,12 @@
 //your JS code here. If required.
-let name ={
-	a : "Ram",
-	b : "Raju",
-	c : "Pooja",
-	d : "Lahari"
+let Student ={
+	name : "Pooja",
+	age : 20,
+	city : "Hyderabad"
 }
-function getKeys(name){
-	for(let key in name){
-		return Object.keys(name)
+function getKeys(student){
+	for(let key in student){
+		return Object.keys(student)
 	}
 }
-console.log(getKeys(name))
+console.log(getKeys(Student))
