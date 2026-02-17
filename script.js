@@ -1,10 +1,16 @@
-//your JS code here. If required.
+// Create the student object
 const student = {
   name: "John"
+};
+
+// Function to get all keys from the object
+function getKeys(obj) {
+  return Object.keys(obj);
 }
-function getKeys(student){
-	return Object.keys(student)
-}
+
+// Example Tests
+
+// Test 1: Object with multiple properties
 const person = {
   name: "Alice",
   age: 22,
@@ -12,4 +18,8 @@ const person = {
 };
 
 console.log(getKeys(person)); 
-console.log(getKeys(Student))
+// Expected Output: ["name", "age", "city"]
+
+// Test 2: Object with single property
+console.log(getKeys(student)); 
+// Expected Output: ["name"]
